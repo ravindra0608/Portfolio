@@ -1,7 +1,6 @@
 *{
     margin: 0%;
     padding: 0%;
-    /* color: white; */
 }
 html {
   scroll-behavior: smooth;
@@ -192,8 +191,9 @@ cursor: pointer;
 /* <----------------------------------------------------- About Section Styles -----------------------------------------------------> */
 
 
-/* #about{
-} */
+#about{
+  margin: auto;
+}
 .heading{
   margin: 50px;
   text-align: center;
@@ -290,26 +290,83 @@ cursor: pointer;
   justify-content: space-around;
 }
 /* <----------------------------------------------------- Projects Section Styles -----------------------------------------------------> */
-/* #projects{
-  
-  width: 75vw;
-  height: 70vh;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-} */
-/* <----------------------------------------------------- Contact Me Section Styles -----------------------------------------------------> */
+#projects{
+  margin: auto;
+}
 
-/* #contactme{
-  
-  width: 75vw;
-  height: 70vh;
-  color: white;
+#projects-container{
   display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-}  */
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.project-details{
+  position: relative;
+  width: 350px;
+}
+
+.project-image{
+  display: block;
+  height: 350px;
+  width: 350px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%;
+  width: 100%; */
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
+}
+
+.project-details:hover .overlay {
+  opacity: 1;
+}
+
+.project-title {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* <----------------------------------------------------- Contact Me Section Styles -----------------------------------------------------> */
+#contactme{
+  /* padding-top: 5%; */
+  margin: auto;
+  height: auto;
+  width: 93.8vw;
+  position: relative;
+  left: 2.5vw;
+  overflow: hidden;
+  background-image:linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%) ;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+#contactme-div{
+  font-size: larger;
+  margin: auto;
+  text-align: center;
+  padding: auto;
+  line-height: 300%;
+} 
+#contact-me-button{
+  height: 50px;
+  width: 200px;
+  
+}
 
 
 
